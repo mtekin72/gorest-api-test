@@ -8,7 +8,7 @@ module.exports = defineConfig({
     projectId: "ja5f7v",
 
     env: {
-      CYPRESS_API_TOKEN: process.env.CYPRESS_API_TOKEN,
+       CYPRESS_API_TOKEN: process.env.CYPRESS_API_TOKEN,
     },
   },
 });
