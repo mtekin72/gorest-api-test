@@ -104,10 +104,11 @@ To run the tests in a continuous integration/continuous deployment (CI/CD) pipel
 To integrate Cypress with GitHub Actions and the Cypress Dashboard:
 
 1. **CYPRESS_RECORD_KEY**: Create an account on the [Cypress Dashboard](https://dashboard.cypress.io) and obtain your record key from your project settings.
-2. **Add the Record Key to GitHub Secrets**:
+2. **Add CYPRESS_RECORD_KEY (optain from https://gorest.co.in/my-account/access-tokens)  and CYPRESS_API_TOKEN to GitHub Secrets**:
    - Go to your GitHub repository.
    - Navigate to `Settings` > `Secrets` > `Actions` > `New repository secret`.
    - Add `CYPRESS_RECORD_KEY` as the name and paste the record key as the value.
+   - Add `CYPRESS_API_TOKEN` as the name and paste the record key as the value.
 
 3. **Update GitHub Actions Workflow**:
    Modify the `.github/workflows/cypress.yml` file to include the `--record` flag for recording test results and the `CYPRESS_RECORD_KEY` as an environment variable:
