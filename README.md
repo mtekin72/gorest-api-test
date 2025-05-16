@@ -154,6 +154,10 @@ This command helps standardize API calls across test cases, making tests more ma
   ```bash
   npx cypress open
   ```
+- To run smoke tests in Headless Mode locally, add key value of CYPRESS_API_TOKEN in cypress.config.js and run :
+  ```bash
+  npm run cypress:smoke-test
+  ```
 
 ## Detailed Test Cases
 
